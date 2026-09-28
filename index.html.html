@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tanushri D — Portfolio</title>
+<style>
+:root{--bg:#07111f;--surface:#0d1a2b;--text:#eef6ff;--muted:#9fb2c8;--accent:#46e6c8;--accent2:#5b8cff;--border:rgba(255,255,255,.1)}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+body:before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle at 20% 20%,rgba(70,230,200,.14),transparent 28%),radial-gradient(circle at 80% 30%,rgba(91,140,255,.16),transparent 30%);pointer-events:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(7,17,31,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}nav a{color:var(--muted);text-decoration:none;margin-left:24px;font-size:.92rem}nav a:hover{color:var(--text)}
+section{padding:100px 7%;max-width:1180px;margin:auto}.hero{min-height:100vh;display:grid;place-items:center;padding-top:130px}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.95;margin:18px 0}.hero h1 span{color:transparent;-webkit-text-stroke:1px var(--accent2)}.hero p{font-size:1.15rem;color:var(--muted);max-width:650px;line-height:1.8}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 20px;border-radius:999px;text-decoration:none;border:1px solid var(--border);color:var(--text);background:rgba(255,255,255,.04);transition:.25s}.btn.primary{background:linear-gradient(100deg,var(--accent),var(--accent2));color:#04101a;border:0;font-weight:800}.btn:hover{transform:translateY(-3px)}
+.orb{width:310px;height:310px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8ffff0,transparent 15%),linear-gradient(135deg,rgba(70,230,200,.7),rgba(91,140,255,.3));box-shadow:0 0 90px rgba(70,230,200,.2);animation:float 5s ease-in-out infinite;position:relative}.orb:after{content:"DATA • AI • RETAIL";position:absolute;inset:70px;border:1px solid rgba(255,255,255,.4);border-radius:50%;display:grid;place-items:center;text-align:center;font-size:.75rem;letter-spacing:3px;color:#fff}
+@keyframes float{50%{transform:translateY(-18px) rotate(4deg)}}
+.title{font-size:2.3rem;margin:0 0 12px}.lead{color:var(--muted);line-height:1.8}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.card{background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--border);border-radius:22px;padding:24px;transition:.3s}.card:hover{transform:translateY(-7px);border-color:rgba(70,230,200,.45)}.card h3{margin-top:0}.tag{display:inline-block;padding:7px 10px;border-radius:999px;background:rgba(70,230,200,.1);color:var(--accent);font-size:.8rem;margin:5px 4px 0 0}
+.project{grid-column:span 2}.project h3{font-size:1.5rem}.project-meta{color:var(--muted);line-height:1.7}.metrics{display:flex;gap:30px;flex-wrap:wrap;margin-top:20px}.metric strong{display:block;font-size:1.5rem}.metric span{color:var(--muted);font-size:.8rem}
+.timeline{border-left:1px solid var(--border);padding-left:25px}.timeline .card{margin-bottom:18px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact a{color:var(--text);text-decoration:none}.contact a:hover{color:var(--accent)}
+footer{text-align:center;padding:40px;color:var(--muted);border-top:1px solid var(--border)}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){nav div:last-child{display:none}.hero-grid,.contact{grid-template-columns:1fr}.orb{width:220px;height:220px;margin:auto}.grid{grid-template-columns:1fr}.project{grid-column:span 1}section{padding:85px 6%}.hero{padding-top:110px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">Tanushri<span>.</span></div><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+<section class="hero">
+<div class="hero-grid">
+<div class="reveal"><div class="eyebrow">Data • AI • Retail</div><h1>Hi, I'm<br><span>Tanushri D</span></h1><p>Commerce graduate building practical projects in data analytics, Generative AI and retail technology. I turn data into clear insights and useful digital experiences.</p><div class="buttons"><a class="btn primary" href="#projects">Explore Projects ↓</a><a class="btn" href="https://github.com/dtanushri28-code" target="_blank">GitHub ↗</a></div></div>
+<div class="reveal"><div class="orb"></div></div>
+</div></section>
+<section id="about" class="reveal"><h2 class="title">About Me</h2><p class="lead">I'm Tanushri D, a B.Com Computer Applications graduate currently pursuing MCA with a focus on Generative AI. I enjoy learning by building practical projects in analytics, programming and AI, especially around the retail domain.</p></section>
+<section id="skills" class="reveal"><h2 class="title">Skills</h2><div class="grid"><div class="card"><h3>Programming</h3><span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span></div><div class="card"><h3>Data & Analytics</h3><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Data Visualization</span></div><div class="card"><h3>AI</h3><span class="tag">Generative AI</span><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">NLP</span></div></div></section>
+<section id="projects" class="reveal"><h2 class="title">Projects</h2><div class="grid"><div class="card project"><span class="eyebrow">Featured • Project 01</span><h3>🛒 Retail Sales Analysis & Business Insights</h3><p class="project-meta">A Python-based retail analytics project using 1,000 simulated transactions to study sales trends, product and category performance, store performance and business KPIs.</p><div class="metrics"><div class="metric"><strong>1,000</strong><span>Orders analyzed</span></div><div class="metric"><strong>₹8.95Cr</strong><span>Total revenue</span></div><div class="metric"><strong>6</strong><span>Visualizations</span></div></div><p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></p><div class="buttons"><a class="btn primary" href="https://github.com/dtanushri28-code/retail-sales-analysis-python" target="_blank">View GitHub Project ↗</a></div></div><div class="card"><h3>Coming Next</h3><p class="project-meta">More retail-domain projects will be added here as the portfolio grows.</p><span class="tag">Inventory</span><span class="tag">SQL</span><span class="tag">Machine Learning</span></div></div></section>
+<section id="education" class="reveal"><h2 class="title">Education</h2><div class="timeline"><div class="card"><h3>MCA — Generative AI</h3><p class="project-meta">Currently pursuing<br>Focus: Generative AI, Data Analytics, Machine Learning and Deep Learning</p></div><div class="card"><h3>B.Com Computer Applications</h3><p class="project-meta">Anna Adarsh College for Women, Chennai<br>University of Madras<br>2023–2026</p></div></div></section>
+<section id="contact" class="reveal"><h2 class="title">Let's Connect</h2><div class="contact"><div class="card"><h3>Get in touch</h3><p class="project-meta">I'm open to connecting around data analytics, AI, retail technology and learning opportunities.</p><p>📧 <a href="mailto:dtanushri28@gmail.com">dtanushri28@gmail.com</a></p><p>💼 <a href="https://www.linkedin.com/in/tanushri-d-59985035b" target="_blank">LinkedIn</a></p><p>🐙 <a href="https://github.com/dtanushri28-code" target="_blank">GitHub</a></p></div></div></section>
+<footer>© 2026 Tanushri D • Built with curiosity, data & AI.</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+</body></html>
